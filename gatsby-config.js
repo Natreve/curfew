@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Curfew`,
-    description: `A curfew tracking app that allows the user to keep track of curfew hours so they don't get cought being on the road after government stepulated curfew hours.`,
+    description: `A curfew tracking app that allows the user to keep track of curfew hours stepulated by the Jamaican government.`,
     author: `@natreve`,
   },
   plugins: [
