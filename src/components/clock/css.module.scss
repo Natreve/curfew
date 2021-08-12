@@ -1,0 +1,21 @@
+#clock {
+  margin-left: 75px;
+  path {
+    stroke: none;
+    stroke-linecap: round;
+    stroke-width: 42;
+    fill: #693d35;
+  }
+  #sec {
+    stroke: #e9d9ca;
+    stroke-width: 20;
+  }
+  #min {
+    stroke: #e9d9ca;
+    stroke-width: 38;
+  }
+  #hr {
+    stroke: #e9d9ca;
+    stroke-width: 38;
+  }
+}
