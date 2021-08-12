@@ -4,9 +4,7 @@ A curfew tracking app that allows the user to keep track of curfew hours and be 
 
 # ✨ Planned Features
 
-- 1 Hours notification before curfew starts (Android, pc and mac support only)
-- Notifcation that curfew has started (Android, pc and mac support only)
-- Notifcation that curfew has ended (Android, pc and mac support only)
+- ~~1 Hours notification before curfew starts (Android, pc and mac support only)~~
 - Customize notification time (Android, pc and mac support only)
 - Notifcation based on distance from home (Android, pc and mac support only)
 - Curfew Calendar
@@ -17,3 +15,6 @@ A curfew tracking app that allows the user to keep track of curfew hours and be 
 
 - Design inspiration [pkodesign](https://dribbble.com/pkodesign)
 - Animated SVG Clock [fgnass](https://codepen.io/fgnass)
+
+![](/screenshots/curfew-starts.jpeg)
+![](/screenshots/curfew-ends.jpeg)

@@ -36,14 +36,24 @@ main {
   margin: 0 auto;
   max-width: 1080px;
 }
-.title {
-  color: var(--primary);
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 28px !important;
-  line-height: 34px !important;
-  width: 108px;
+header {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    color: var(--primary);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px !important;
+    line-height: 34px !important;
+    width: 108px;
+  }
+  div {
+    svg {
+      cursor: pointer;
+      margin-left: 0.5em;
+    }
+  }
 }
 .today {
   display: inline-block;
