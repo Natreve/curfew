@@ -17,13 +17,12 @@ class Curfew {
       const { hours, minutes, seconds } = this.ongoing()
         ? ced.diff(this.now, options).toObject()
         : csd.diff(this.now, options).toObject()
-      this.onInterval ??
+
+      if (typeof this.onInterval === "function")
         this.onInterval({ hours, minutes, seconds: Math.round(seconds) })
     }, 1000)
   }
-  init() {
-    return this
-  }
+ 
   ongoing() {
     const { now, tomorrow, period } = this
     const { start, end } = period
@@ -37,6 +36,11 @@ class Curfew {
   }
   measuresEnd() {
     const { now } = this
+    let ended = parseInt(
+      DateTime.fromISO(curfew.ends).diff(now, "days").toFormat("d")
+    )
+    if (ended <= 0) return "00"
+
     return DateTime.fromISO(curfew.ends).diff(now, "days").toFormat("dd")
   }
   starts() {

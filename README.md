@@ -2,16 +2,13 @@
 
 A curfew tracking app that allows the user to keep track of curfew hours and be reminded so they don't get cought being on the road after no movement periods.
 
-# ✨ Current Features
-
-- 1 Hours notification before curfew starts
-- Notifcation that curfew has started
-- Notifcation that curfew has ended
-
 # ✨ Planned Features
 
-- Customize notification time
-- Notifcation based on distance from home
+- 1 Hours notification before curfew starts (Android, pc and mac support only)
+- Notifcation that curfew has started (Android, pc and mac support only)
+- Notifcation that curfew has ended (Android, pc and mac support only)
+- Customize notification time (Android, pc and mac support only)
+- Notifcation based on distance from home (Android, pc and mac support only)
 - Curfew Calendar
 - Recreational establishment curfew hours
 - Add your own curfew periods
