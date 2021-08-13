@@ -13,13 +13,21 @@ const IndexPage = () => {
     }
     if (Notification.permission === "granted") {
       let body = "Notification permissions have already been granted"
+      navigator.serviceWorker.ready.then(function ({ showNotification }) {
+        showNotification("Notification Permissions", { body, icon })
+      })
       return new Notification("Notification Permissions", { body, icon })
     }
-
+    if (Notification.permission === "denied") {
+      return alert("Seems like you've already denied notifications.")
+    }
     if (Notification.permission !== "denied") {
       Notification.requestPermission().then(function (permission) {
         if (permission === "granted") {
           let body = "Notification permssions have been granted"
+          navigator.serviceWorker.ready.then(function ({ showNotification }) {
+            showNotification("Notification Permissions", { body, icon })
+          })
           new Notification("Notification Permissions", { body, icon })
         }
       })
@@ -29,6 +37,9 @@ const IndexPage = () => {
   const notify = (title, body) => {
     if (!("Notification" in window) && Notification.permission !== "granted")
       return false
+    navigator.serviceWorker.ready.then(function ({ showNotification }) {
+      showNotification("Notification Permissions", { body, icon })
+    })
     new Notification(title, { body, icon })
   }
   useEffect(() => {
